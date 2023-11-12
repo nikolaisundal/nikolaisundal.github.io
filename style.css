@@ -51,6 +51,12 @@ footer {
 }
 
 @media (max-width: 700px) {
+  footer span {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 700px) {
   .portfolio {
     grid-template-columns: 1fr; /* One column on smaller screens */
   }
