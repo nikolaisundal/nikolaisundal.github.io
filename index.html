@@ -7,8 +7,10 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
+      href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&family=Raleway&display=swap"
       rel="stylesheet"
     />
     <link
@@ -21,68 +23,235 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
   <body>
-    <header>Welcome to my portfolio</header>
-
-    <div class="bio">
-      <p>
-        Hi! My name is Nikolai, I am a selftaught web developer from Trondheim,
-        Norway.
-      </p>
-      <p>
-        My main focus is on front end development using tools such as
-        Typescript, React, Svelte and tailwind.
-      </p>
-      <p>Check out my projects in the cards below</p>
+    <header>Welcome to my portfolio!</header>
+    <div class="bio-container">
+      <div class="bio">
+        <p>
+          Hi! My name is Nikolai, I am a self-taught web developer from
+          Trondheim, Norway.
+        </p>
+        <p>
+          My main focus is on front end development using tools such as
+          Typescript, React, Svelte and Tailwind.
+        </p>
+        <p>Check out my projects in the cards below!</p>
+      </div>
     </div>
 
     <div class="portfolio">
       <div class="card">
-        <h3>Mastermind</h3>
-        <!-- <img
-          src="images/mastermind.jpg"
-          alt="Mastermind Project"
-          style="width: 400px; height: 700px"
-        /> -->
-        <p>
-          My rendition of the classic mastermind game. Set the difficulty by
-          adjusting the number of attempts and colours.
-        </p>
-        <a href="https://mastermind-azure-mu.vercel.app/" target="_blank"
-          >View Project</a
-        >
+        <div class="heading-container"><h3>Mastermind</h3></div>
+
+        <div class="image-container">
+          <img
+            src="images/mastermind1.jpg"
+            alt="Mastermind Project"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <div class="badge-container">
+            <span class="badge red">Svelte</span>
+            <span class="badge blue">Typescript</span>
+            <span class="badge darkcyan">Tailwind</span>
+          </div>
+          <p>
+            My rendition of the classic mastermind game. Set the difficulty by
+            adjusting the number of attempts and colours.
+          </p>
+
+          <div class="link-containter">
+            <div class="link-spacer">
+              <a
+                href="https://github.com/nikolaisundal/mastermind"
+                target="_blank"
+                >View code</a
+              >
+              <a href="https://mastermind-azure-mu.vercel.app/" target="_blank"
+                >View demo</a
+              >
+            </div>
+          </div>
+        </div>
       </div>
+
       <div class="card">
+        <div class="heading-container"><h3>Optotools</h3></div>
+        <div class="image-container">
+          <img
+            src="images/optotools.jpg"
+            alt="Optotools Project"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <div class="badge-container">
+            <span class="badge red">React</span>
+            <span class="badge darkcyan">Tailwind</span>
+            <span class="badge blue">Local storage</span>
+          </div>
+          <p>
+            An app used at my current workplace(Specsavers). The app helps
+            calculate the price of spectacles, it also includes a form for
+            grading during ocular health examinations.
+          </p>
+          <div class="link-containter">
+            <div class="link-spacer">
+              <a
+                href="https://github.com/nikolaisundal/optoTools"
+                target="_blank"
+                >View code</a
+              >
+              <a
+                href="https://nikolaisundal.github.io/optoTools/"
+                target="_blank"
+                >View demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="heading-container"><h3>Adjective</h3></div>
+        <div class="image-container">
+          <img
+            src="images/adjective.jpg"
+            alt="Adjective Project"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <div class="badge-container">
+            <span class="badge red">React</span>
+            <span class="badge green">Python</span>
+            <span class="badge blue">Flask</span>
+            <span class="badge darkcyan">Tailwind</span>
+            <span class="badge gold">AI</span>
+          </div>
+          <p>
+            Use AI to generate a story based on your input. Enter names,
+            adjectives, a setting and a mood to create your next epic adventure!
+          </p>
+          <div class="link-containter">
+            <div class="link-spacer">
+              <a
+                href="https://github.com/nikolaisundal/adjective-frontend"
+                target="_blank"
+                >View code<br />(UI)</a
+              >
+              <a
+                href="https://github.com/nikolaisundal/adjective-backend"
+                target="_blank"
+                >View code<br />(API)</a
+              >
+              <a href="https://adjective.vercel.app/" target="_blank"
+                >View demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="heading-container"><h3>Grocery List Memory Game</h3></div>
+        <div class="image-container">
+          <img
+            src="images/memory.jpg"
+            alt="Grocery List Memory Game"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <div class="badge-container">
+            <span class="badge gold">Javascript</span>
+            <span class="badge red">HTML</span>
+            <span class="badge blue">CSS</span>
+          </div>
+          <p>
+            A memory game where you create a grocery list, memorize it and then
+            hide it. As you do your shopping try to remember the items and
+            search for them, if there is a match the item will be visible again
+          </p>
+          <div class="link-containter">
+            <div class="link-spacer">
+              <a
+                href="https://github.com/nikolaisundal/ShoppingListGame"
+                target="_blank"
+                >View code</a
+              >
+              <a
+                href="https://nikolaisundal.github.io/ShoppingListGame/"
+                target="_blank"
+                >View demo</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>Contact me: nikolaisundal@gmail.com</footer>
+  </body>
+</html>
+
+<!-- <div class="card">
         <h3>Optotools</h3>
-        <p>
-          An app used at my current workplace(Specsavers). The app helps
-          calculate the price of spectacles, it also includes a form for grading
-          during ocular health examinations.
-        </p>
-        <a href="https://nikolaisundal.github.io/optoTools/" target="_blank"
-          >View Project</a
-        >
+        <div class="image-container">
+          <img
+            src="images/optotools.jpg"
+            alt="Mastermind Project"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <p>
+            An app used at my current workplace(Specsavers). The app helps
+            calculate the price of spectacles, it also includes a form for
+            grading during ocular health examinations.
+          </p>
+          <a href="https://nikolaisundal.github.io/optoTools/" target="_blank"
+            >View Project</a
+          >
+        </div>
       </div>
       <div class="card">
         <h3>Adjective</h3>
-        <p>
-          Use AI to generate a story based on your input. Enter names,
-          adjectives, a setting and a mood to create your next epic adventure!
-        </p>
-        <a href="https://adjective.vercel.app/" target="_blank">View Project</a>
+        <div class="image-container">
+          <img
+            src="images/adjective.jpg"
+            alt="Mastermind Project"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <p>
+            Use AI to generate a story based on your input. Enter names,
+            adjectives, a setting and a mood to create your next epic adventure!
+          </p>
+          <a href="https://adjective.vercel.app/" target="_blank"
+            >View Project</a
+          >
+        </div>
       </div>
       <div class="card">
         <h3>Grocery List Memory Game</h3>
-        <p>
-          A memory game where you create a grocery list, memorize it and then
-          hide it. As you do your shopping try to remember the items and search
-          for them, if there is a match the item will be visible again
-        </p>
-        <a
-          href="https://nikolaisundal.github.io/ShoppingListGame/"
-          target="_blank"
-          >View Project</a
-        >
-      </div>
-    </div>
-  </body>
-</html>
+        <div class="image-container">
+          <img
+            src="images/memory.jpg"
+            alt="Mastermind Project"
+            class="project-picture"
+          />
+        </div>
+        <div class="info-container">
+          <p>
+            A memory game where you create a grocery list, memorize it and then
+            hide it. As you do your shopping try to remember the items and
+            search for them, if there is a match the item will be visible again
+          </p>
+          <a
+            href="https://nikolaisundal.github.io/ShoppingListGame/"
+            target="_blank"
+            >View Project</a
+          >
+        </div>
+      </div> -->
